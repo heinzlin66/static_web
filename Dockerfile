@@ -12,5 +12,5 @@ ENV HTML_DIR /var/www/html
 ENV NGINX_PORT 80
 ADD ./HelloWorld.txt /var/www/html/HelloWorld.txt
 COPY ./HelloWorld2.txt /var/www/html/newfolder/HelloWorld2.txt
-ONBUILD ADD ./HelloWorld3.txt /var/www/html/newfolder/HelloWorld3.txt
+#ONBUILD ADD ./HelloWorld3.txt /var/www/html/newfolder/HelloWorld3.txt
 EXPOSE 80
